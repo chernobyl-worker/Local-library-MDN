@@ -5,7 +5,7 @@ var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 
 var mongoose = require('mongoose');
-var dev_db_url = "mongodb+srv://tushar:tushar9260@cluster0.zvq7t.mongodb.net/local-library?retryWrites=true&w=majority";
+var dev_db_url = "mongodb+srv://<id>:<pass>@cluster0.zvq7t.mongodb.net/local-library?retryWrites=true&w=majority";
 var mongodb = process.env.MONGODB_URI || dev_db_url;
 mongoose.connect(mongodb,{useNewUrlParser: true, useUnifiedTopology:true});
 var db = mongoose.connection;
